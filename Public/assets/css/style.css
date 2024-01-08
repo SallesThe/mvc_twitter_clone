@@ -11,34 +11,60 @@ body {
 }
 
 .logo_image {
-    border: 1px solid red;
-    width: 500px;  
-    height: 500px;  
+    /* border: 1px solid red; */
+    width: 600px;  
+    height: 600px;  
 }
 
 .logo_image img {
-    width: 500px;
-    border: 1px solid red;
+    width: 600px;
+    /* border: 1px solid red; */
 }
 
 .authenticate_container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-left: 150px;
     width: 600px;
-    height: 500px;
-    border: 1px solid red;
+    height: 600px;
+    justify-content: center;
+    /* border: 1px solid red; */
 }
 
 .authenticate_container h1 {
-    font-size: 4rem;
+    font-size: 4.8rem;
 }
 
 .authenticate {
     display: flex;
-    margin-top: 10px;
     flex-direction: column;
+    margin-top: 10px;
+    width: 300px;
+    border: 1px solid blue;
 }
 
 .authenticate a {
+    margin-top: 15px;
+    border-radius: 50px;
 
+}
+
+.authenticate small {
+    font-size: .7em;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+.login a {
+    width: 300px;
+    color: #4696ff;
+    margin-top: 7px;
+    background-color: black;
+    border: 1px solid white;
+    transition: .3s ease-in-out;
 }
