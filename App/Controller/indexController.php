@@ -1,5 +1,5 @@
 <?php 
-    namespace App\Controller;
+    namespace App\Controller; 
     use MF\Controller\Action;
 
     class IndexController extends Action

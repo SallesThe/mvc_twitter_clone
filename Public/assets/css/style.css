@@ -1,5 +1,44 @@
 * {box-sizing: border-box; margin: 0px; padding: 0; font-family: 'Times New Roman', Times, serif;  color: white;}
 
 body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: black;
+}
+
+.logo_image {
+    border: 1px solid red;
+    width: 500px;  
+    height: 500px;  
+}
+
+.logo_image img {
+    width: 500px;
+    border: 1px solid red;
+}
+
+.authenticate_container {
+    display: block;
+    margin-left: 150px;
+    width: 600px;
+    height: 500px;
+    border: 1px solid red;
+}
+
+.authenticate_container h1 {
+    font-size: 4rem;
+}
+
+.authenticate {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.authenticate a {
+
 }
