@@ -12,7 +12,25 @@
         <small>Ao se inscrever, você concorda com os <a href="">Termos de serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</small>
         <div class="login">
             <h2>Já tem conta ?</h2>
-            <a href="#" class="btn btn-primary">Entrar</a>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="myModal" >Entrar</button>
         </div>
     </section>
 </section>
+
+<div id="myModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title">Modal title</h3>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
+    </div>
+</div>
