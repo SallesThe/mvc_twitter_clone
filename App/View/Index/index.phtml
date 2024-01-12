@@ -7,8 +7,9 @@
         <h2>Inscreva-se hoje</h2>
         <a href="http://google.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">Inscreva-se no google</a>
         <a href="http://apple.com" class="btn btn-light" target="_blank" rel="noopener noreferrer">Inscreva-se com Apple</a>
+        <br>
         <hr>
-        <a class="btn btn-primary" href="/subscribe">Criar conta</a>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSubscribe">Criar conta</button>
         <small>Ao se inscrever, você concorda com os <a href="">Termos de serviço</a> e a <a href="">Política de Privacidade</a>, incluindo o <a href="">Uso de Cookies</a>.</small>
         <div class="login">
             <h2>Já tem conta ?</h2>
@@ -38,6 +39,41 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
                 <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<div id="modalSubscribe" class="modal fade modal-md">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Cadastre-se | Saiba o que ta acontecendo agora.</h5>
+            <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="/authenticate" method="post">
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" name="name" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Nome</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" name="email" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Senha</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" name="confirm_password" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Confirme sua Senha</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
             </div>
         </form>
         </div>
