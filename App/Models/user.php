@@ -1,10 +1,10 @@
 <?php 
-    namespace App;
+    namespace App\Models;
     use MF\Model\Model;
 
     class User extends Model
     {
-// * Getting data from method __set()
+        // * Getting data from method __set()
         public function __get($attribute)
         {
             return $this->$attribute;
@@ -15,4 +15,6 @@
         {
             $this->$attribute = $value;
         } 
+
+        
     }
