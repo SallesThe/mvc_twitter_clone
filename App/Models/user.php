@@ -1,5 +1,7 @@
 <?php 
     namespace App\Models;
+
+    use MF\Model\Container;
     use MF\Model\Model;
 
     class User extends Model
@@ -15,6 +17,12 @@
         {
             $this->$attribute = $value;
         } 
+
+        public function subscribe(): void
+        {
+            $query = "SELECT ";
+            $stmt = "";
+        }
 
         
     }
