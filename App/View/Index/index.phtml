@@ -28,11 +28,11 @@
         <form action="/authenticate" method="post">
             <div class="modal-body">
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput">Email</label>
                 </div>
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">Senha</label>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <h5 class="modal-title">Cadastre-se | Saiba o que ta acontecendo agora.</h5>
             <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <form action="/authenticate" method="post">
+        <form action="/register" method="post">
             <div class="modal-body">
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" name="name" id="floatingInput" placeholder="name@example.com">
@@ -63,7 +63,7 @@
                     <label for="floatingEmail">Email</label>
                 </div>
                 <div class="form-floating">
-                    <input type="date" class="form-control" name="confirm_password" id="floatingPassword" placeholder="Password">
+                    <input type="date" class="form-control" name="birthday" id="floatingPassword" placeholder="Birthday">
                     <label for="floatingPassword">Data Nascimento</label>
                 </div>
                 <div class="form-floating">

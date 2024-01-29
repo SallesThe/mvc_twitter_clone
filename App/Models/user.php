@@ -20,8 +20,7 @@
 
         public function subscribe(): void
         {
-            $query = "SELECT ";
-            $stmt = "";
+            $query = "INSERT INTO ";
         }
 
         
